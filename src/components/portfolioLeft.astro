@@ -1,11 +1,11 @@
 ---
-
+const {section} = Astro.props;
 ---
 
-<div>
+<div class={section}>
     <slot name="image"></slot>
     <div class="text">
-        <slot name="header"></slot>
+        <h1>{section}</h1>
         <slot name="description"></slot>
     </div>
 </div>
