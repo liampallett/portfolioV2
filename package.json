@@ -10,6 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "astro": "^4.12.2"
+  }
+}
+=======
     "astro": "^4.12.1"
   }
 }
+>>>>>>> 88d169bb9491c50c440f2bc51339a8138dbd4c5d
