@@ -1,5 +1,6 @@
 ---
 import Block from "../components/block.astro"
+import SocialBlock from "../components/socialBlock.astro"
 import PortfolioLeft from "../components/portfolioLeft.astro"
 import PortfolioRight from "../components/portfolioRight.astro"
 ---
@@ -7,38 +8,76 @@ import PortfolioRight from "../components/portfolioRight.astro"
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="me.jpg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Liam Pallett</title>
 	</head>
 	<body>
-		<h1>hi! i'm liam. welcome to my website.</h1>
 		<div class="blocks">
+			<Block section="hi! i'm liam. welcome to my website.">
+				<img slot="image" class="portrait" src="me.jpg">
+				<p slot="text">17 y/r old computer scientist, hockey enthusiast and aspiring software engineer</p>
+			</Block>
+
 			<Block section="about me">
 				<p slot="text">for my entire life i have been passionate about computers and more importantly coding. i'm well versed in python, c# and since creating this website, html, js and css. i've played for my local hockey team for the past 4 years, making countless appearences and demonstrating strong communication, teamwork and leadership skills.</p>"
 			</Block>
 
-			<Block section="projects">
+			<Block section="projects" class="projects">
 				<PortfolioLeft slot="project" section="portfolio website v1">
 					<p slot="description">my first major project was to create a professional portfolio website that i can use not just as a showcase for my skills but to send to potential recruiters such as yourself so you can learn more about me. i used a combination of html, css and javascript to make this website look nice and add functionality to the sidebar function, allowing the user to redirect around the page. since i was effectively learning the languages as i was working i believe this project showed strong problem solving skills as i was able to fix any issues as and when they arrived.</p>
+					<img slot="project" src="Images/website.png">
 				</PortfolioLeft>
 				<PortfolioRight slot="project" section="unity game test, 2022">
 					<p slot="description">my oldest project was creating a rough game prototype in the unity game engine. i used c# and the .net framework to create this project, along with development tools such as vs code and the unity engine. this was my first complete unity project and would like to revisit it again soon as my c# and unity skills have developed in the time since and i am curious as to see what i could do with the project a few years on.</p>
 				</PortfolioRight>
 			</Block>
 
-			<Block section="socials">
+			<SocialBlock section="socials">
 				<p slot="text">the easiest way to reach me is via my email liam.pallett06@gmail.com or you can reach me on any of the other social media below. i'm normally free between 4pm-10pm gmt if you want to message or email me. i'm also open to growing my linkedin network so feel free to connect with me!</p>
-			</Block>
+				<a href="https://reddit.com/u/liampallett" target="_blank"><img src="/Images/Icons/reddit.png" class="icon" alt="reddit"></a>
+				<a href="https://www.linkedin.com/in/liam-pallett-a93a10304/" target="_blank"><img src="/Images/Icons/linkedin.png" class="icon" alt="linkedin"></a>
+				<a href="https://www.github.com/liampallett" target="_blank"><img src="Images/Icons/github.png" class="icon" alt="github"></a>
+				<a href="https://leetcode.com/u/liam_pallett/" target="_blank"><img src="Images/Icons/leetcode.png" class="icon" alt="leetcode"></a>
+				<a href="https://stackoverflow.com/users/24810669/liam-pallett" target="_blank"><img src="Images/Icons/stackoverflow.png" class="icon" alt="stack overflow"></a>
+			</SocialBlock>
 		</div>
 	</body>
 </html>
 
 <style>
 	.blocks {
+		display: block;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+		padding: 10px;
+	}
+	
+	.projects {
+		display: flexbox;
+	}
+
+	.portrait {
+		display: block;
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+	}
+
+	.blocks {
 		display: flex;
 		justify-content: center;
 		flex-flow: column wrap;
+	}
+
+	.icon {
+		width: 32px;
+		height: 32px;
+		padding: 10px;
 	}
 </style>
