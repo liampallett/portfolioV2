@@ -13,26 +13,36 @@ import SocialBlock from "../components/socialBlock.astro"
 	</head>
 	<body>
 		<div class="blocks">
-			<Block section="hi! i'm liam. welcome to my website.">
+			<Block section="Hi! I'm Liam. Welcome to my website.">
 				<img slot="image" class="portrait" src="me.jpg">
 				<p slot="text">17 y/r old computer scientist, hockey enthusiast and aspiring software engineer</p>
 			</Block>
 
-			<Block section="about me">
-				<p slot="text">for my entire life i have been passionate about computers and more importantly coding. i'm well versed in python, c# and since creating this website, html, js and css. i've played for my local hockey team for the past 4 years, making countless appearences and demonstrating strong communication, teamwork and leadership skills.</p>"
+			<Block section="About Me">
+				<p slot="text">For my entire life I have been passionate about computers and more importantly coding. I'm well versed in Python, C# and since creating this website, HTML, JS and CSS. I've played for my local hockey team for the past 4 years, making countless appearences and demonstrating strong communication, teamwork and leadership skills.</p>
 			</Block>
 
-			<Block section="projects" class="projects">
-				<Block section="website v1">
-					<p slot="text">My first major project was to create a professional portfolio website that I can use not just as a showcase for my skills but to send to potential recruiters in the future. I used a combination of HTML, CSS and Javascript to make the website functionality to the sidebar function, allowing the user to redirect around the page. Since I was effectively learning the languages as I was working I believ this project showed strong problem solving skills as I was able to fix issues as they arrived,</p>
-				</Block>
-				<Block>
-					<img slot="image" class="project-image" src="Images/website.png">
-				</Block>
+			<Block section="Projects" class="projects">
+				<div class="website v1">
+					<Block section="Website V1">
+						<p slot="text">My first major project was to create a professional portfolio website that I can use not just as a showcase for my skills but to send to potential recruiters in the future. I used a combination of HTML, CSS and Javascript to make the website functionality to the sidebar function, allowing the user to redirect around the page. Since I was effectively learning the languages as I was working I believ this project showed strong problem solving skills as I was able to fix issues as they arrived,</p>
+					</Block>
+					<Block>
+						<img slot="image" class="project-image" src="Images/website.png">
+					</Block>
+				</div>
+				<div class="unity game test">
+					<Block section="Unity Game Test">
+						<iframe width="400" height="400" src="https://www.youtube.com/embed/Vaw-LAmsAyM?si=OkYktUn0Vb_NEw1r&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+					</Block>
+					<Block>
+						<p slot="text">My oldest project was creating a rough game prototype in the Unity game engine. I used C# to create the projcet, along with development tools such as VS Code and the Unity engine. This was my first complete Unity project and would like to revisit it again soon as my C# and Unity skills have developed with time and I am curious as to see what I could do again with the project a few years on.</p>
+					</Block>
+				</div>
 			</Block>
 
-			<SocialBlock section="socials">
-				<p slot="text">the easiest way to reach me is via my email liam.pallett06@gmail.com or you can reach me on any of the other social media below. i'm normally free between 4pm-10pm gmt if you want to message or email me. i'm also open to growing my linkedin network so feel free to connect with me!</p>
+			<SocialBlock section="Socials">
+				<p slot="text">The easiest way to reach me is via my email liam.pallett06@gmail.com or you can reach me on any of the other social media below. I'm normally free between 4pm-10pm gmt if you want to message or email me. I'm also open to growing my linkedin network so feel free to connect with me!</p>
 				<a href="https://reddit.com/u/liampallett" target="_blank"><img src="/Images/Icons/reddit.png" class="icon" alt="reddit"></a>
 				<a href="https://www.linkedin.com/in/liam-pallett-a93a10304/" target="_blank"><img src="/Images/Icons/linkedin.png" class="icon" alt="linkedin"></a>
 				<a href="https://www.github.com/liampallett" target="_blank"><img src="Images/Icons/github.png" class="icon" alt="github"></a>
