@@ -1,4 +1,4 @@
-This is my portfolio website hosted at [liampallett.netlify.app](liampallett.netlify.app). 
+This is my portfolio website hosted at [liampallett.netlify.app](https://liampallett.netlify.app). 
 
 I rewrote it after being introduced to the Astro framework as I realised that it would be perfect for my static portfolio website. 
 
