@@ -1,8 +1,6 @@
 ---
 import Block from "../components/block.astro"
 import SocialBlock from "../components/socialBlock.astro"
-import PortfolioLeft from "../components/portfolioLeft.astro"
-import PortfolioRight from "../components/portfolioRight.astro"
 ---
 
 <html lang="en">
@@ -25,13 +23,12 @@ import PortfolioRight from "../components/portfolioRight.astro"
 			</Block>
 
 			<Block section="projects" class="projects">
-				<PortfolioLeft slot="project" section="portfolio website v1">
-					<p slot="description">my first major project was to create a professional portfolio website that i can use not just as a showcase for my skills but to send to potential recruiters such as yourself so you can learn more about me. i used a combination of html, css and javascript to make this website look nice and add functionality to the sidebar function, allowing the user to redirect around the page. since i was effectively learning the languages as i was working i believe this project showed strong problem solving skills as i was able to fix any issues as and when they arrived.</p>
-					<img slot="project" src="Images/website.png">
-				</PortfolioLeft>
-				<PortfolioRight slot="project" section="unity game test, 2022">
-					<p slot="description">my oldest project was creating a rough game prototype in the unity game engine. i used c# and the .net framework to create this project, along with development tools such as vs code and the unity engine. this was my first complete unity project and would like to revisit it again soon as my c# and unity skills have developed in the time since and i am curious as to see what i could do with the project a few years on.</p>
-				</PortfolioRight>
+				<Block section="website v1">
+					<p slot="text">My first major project was to create a professional portfolio website that I can use not just as a showcase for my skills but to send to potential recruiters in the future. I used a combination of HTML, CSS and Javascript to make the website functionality to the sidebar function, allowing the user to redirect around the page. Since I was effectively learning the languages as I was working I believ this project showed strong problem solving skills as I was able to fix issues as they arrived,</p>
+				</Block>
+				<Block>
+					<img slot="image" class="project-image" src="Images/website.png">
+				</Block>
 			</Block>
 
 			<SocialBlock section="socials">
@@ -79,5 +76,10 @@ import PortfolioRight from "../components/portfolioRight.astro"
 		width: 32px;
 		height: 32px;
 		padding: 10px;
+	}
+
+	.project-image {
+		width: 400px;
+		height: 400px;
 	}
 </style>
